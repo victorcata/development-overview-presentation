@@ -1,0 +1,114 @@
+@import "_variables.scss";
+
+//---------------------------- HEADER ----------------------------
+#l-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    font-family: 'BebasNeue', sans-serif;
+    background-color: rgba(27, 28, 26, .8);
+    z-index: 5;
+}
+
+//---------------------------- HOME ----------------------------
+#l-home {
+    display: table;
+    width: 100%;
+    overflow: hidden;
+    z-index: 10;
+
+    .content {
+        position: relative;
+        top: 100%;
+        display: table-cell;
+        vertical-align: middle;
+        padding-left: 5%;
+        color: #FFF;
+        animation: bottomToTop .5s .5s;
+        animation-fill-mode: forwards;
+
+        h1 {
+            font-size: 6em;
+
+            &:before {
+                content: '';
+                display: block;
+                height: 10px;
+                width: 1.6em;
+                background-color: #FFF;
+            }
+        }
+
+        h2 {
+            font-size: 4em;
+        }
+    }
+
+    .actions {
+        animation: actionBtn .5s ease-out .5s infinite alternate-reverse;
+    }
+
+    button {
+        position: relative;
+        top: 100px;
+        border: none;
+        color: #FFF;
+        font-size: 3em;
+        outline: none;
+        background-color: transparent;
+        animation: btnBottomToTop .5s .8s;
+        animation-fill-mode: forwards;
+    }
+
+    .bg-video:before {
+        background: $black;
+    }
+}
+
+//---------------------------- INDEX ----------------------------
+#l-index {
+    z-index: 10;
+
+    hgroup {
+        position: absolute;
+        top: 5%;
+        width: 100%;
+        z-index: 10;
+        text-align: center;
+
+        h2 {
+            font-size: 4rem;
+        }
+
+        h2:first-child {
+            float: left;
+            width: 50%;
+            padding-right: 1rem;
+            text-align: right;
+        }
+
+        h2:nth-child(2) {
+            float: right;
+            width: 50%;
+            padding-left: 1rem;
+            text-align: left;
+            color: $white;
+        }
+
+        h2:last-child {
+            clear: both;
+        }
+    }
+}
+
+//---------------------------- FRONT Y BACK ----------------------------
+#l-front, #l-back {
+    display: flex;
+
+    .section {
+        flex: 1 100%;
+        min-width: 100%;
+    }
+}

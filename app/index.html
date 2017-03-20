@@ -1,0 +1,862 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="description" content="Seminar of Front-End and Back-End Development" />
+        <meta name="author" content="Victor Cata" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Behind the scenes: Software Development</title>
+        <link href="" rel="shortcut icon" type="image/x-icon" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
+        <link href="styles/core.css" rel="stylesheet" />
+        <link href="styles/font-awesome.min.css" rel="stylesheet" />
+    </head>
+    <body>
+        <header id="l-header">
+            <div id="menu-front" class="menu-header">
+                <div class="menu-title">
+                    <span>FRONT-END</span>
+                </div>
+                <ul data-ref="front">
+                    <li data-ref="browser">
+                        <span>Browser Languages</span>
+                    </li>
+                    <li data-ref="responsive">
+                        <span>Responsive vs Adaptive</span>
+                    </li>
+                    <li data-ref="mobile">
+                        <span>Mobile First vs Desktop First</span>
+                    </li>
+                    <li data-ref="frameworks">
+                        <span>Frameworks</span>
+                    </li>
+                    <li data-ref="preprocessors">
+                        <span>PREPROCESSORS</span>
+                    </li>
+                    <li data-ref="libraries">
+                        <span>Libraries</span>
+                    </li>
+                    <li data-ref="tools">
+                        <span>Tools</span>
+                    </li>
+                    <li data-ref="whatsnext">
+                        <span>THE FUTURE OF THE FRONT-END</span>
+                    </li>
+                </ul>
+            </div>
+            <div id="menu-back" class="menu-header">
+                <div class="menu-title">
+                    <span>BACK-END</span>
+                </div>
+                <ul data-ref="back">
+                    <li data-ref="net">
+                        <span>Microsoft .Net</span>
+                    </li>
+                    <li data-ref="node">
+                        <span>Node JS</span>
+                    </li>
+                    <li data-ref="mvc">
+                        <span>ASP.NET MVC</span>
+                    </li>
+                    <li data-ref="api">
+                        <span>REST AND SOAP</span>
+                    </li>
+                    <li data-ref="desktop">
+                        <span>Desktop Applications</span>
+                    </li>
+                    <li data-ref="apps">
+                        <span>App Native vs App Hibrid</span>
+                    </li>
+                    <li data-ref="databases">
+                        <span>Databases</span>
+                    </li>
+                    <li data-ref="version">
+                        <span>Version Control</span>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <!-- HOME -->
+        <article id="l-home" class="slide is-visible">
+            <div class="content">
+                <h1>BEHIND THE SCENES:</h1>
+                <h2>SOFTWARE DEVELOPMENT</h2>
+            </div>
+            <div class="bg-video">
+                <video autoplay loop >
+                    <source src="./media/videos/video-front.mp4">
+                </video>
+            </div>
+            <div class="actions is-center">
+                <button data-next="index" class="btn-next-slide">
+                    <span class="fa fa-angle-down"></span>
+                </button>
+            </div>
+        </article>
+        <!-- INDEX -->
+        <article id="l-index" data-page="index" class="slide">
+            <section class="row">
+                <div class="col index-front">
+                    <div class="index-content">
+                        <ul class="menu" data-ref="front">
+                            <!-- <li class="btn-next-slide" data-next="front"> -->
+                            <li data-ref="browser">
+                                <span>Browser Languages</span>
+                            </li>
+                            <li data-ref="responsive">
+                                <span>Responsive vs Adaptive</span>
+                            </li>
+                            <li data-ref="mobile">
+                                <span>Mobile First vs Desktop First</span>
+                            </li>
+                            <li data-ref="frameworks">
+                                <span>Frameworks</span>
+                            </li>
+                            <li data-ref="preprocessors">
+                                <span>Preprocessors</span>
+                            </li>
+                            <li data-ref="libraries">
+                                <span>Libraries</span>
+                            </li>
+                            <li data-ref="tools">
+                                <span>Tools</span>
+                            </li>
+                            <li data-ref="whatsnext">
+                                <span>The future of the Front-End</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <img class="front-img" src="./media/images/frontend.png" />
+                </div>
+                <div class="col index-back">
+                    <div class="index-content">
+                        <ul class="menu" data-ref="back">
+                            <li data-ref="net">
+                                <span>Microsoft .Net</span>
+                            </li>
+                            <li data-ref="node">
+                                <span>Node JS</span>
+                            </li>
+                            <li data-ref="mvc">
+                                <span>ASP.NET MVC</span>
+                            </li>
+                            <li data-ref="api">
+                                <span>REST AND SOAP</span>
+                            </li>
+                            <li data-ref="desktop">
+                                <span>Desktop Applications</span>
+                            </li>
+                            <li data-ref="apps">
+                                <span>App Native vs App Hibrid</span>
+                            </li>
+                            <li data-ref="databases">
+                                <span>Databases</span>
+                            </li>
+                            <li data-ref="version">
+                                <span>Version Control</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <img class="back-img" src="./media/images/backend.png" />
+                </div>
+            </section>
+        </article>
+        <!-- FRONT-END -->
+        <article id="l-front" data-page="front" class="slide">
+            <div id=navigator-front class="navigator">
+                <button class="btn-prev-slide is-up">
+                    <span class="fa fa-chevron-left"></span>
+                </button>
+                <ul>
+                    <li class="is-active is-first" data-ref="browser">
+                        <span>BROWSER LANGUAGES</span>
+                    </li>
+                    <li data-ref="responsive">
+                        <span>RESPONSIVE VS ADAPTIVE</span>
+                    </li>
+                    <li data-ref="mobile">
+                        <span>MOBILE VS DESKTOP FIRST</span>
+                    </li>
+                    <li data-ref="frameworks">
+                        <span>FRAMEWORKS</span>
+                    </li>
+                    <li data-ref="preprocessors">
+                        <span>PREPROCESSORS</span>
+                    </li>
+                    <li data-ref="libraries">
+                        <span>LIBRARIES</span>
+                    </li>
+                    <li data-ref="tools">
+                        <span>TOOLS</span>
+                    </li>
+                    <li class="is-last" data-ref="whatsnext">
+                        <span>THE FUTURE OF THE FRONT-END</span>
+                    </li>
+                </ul>
+                <button class="btn-next-slide">
+                    <span class="fa fa-chevron-right"></span>
+                </button>
+            </div>
+            <section data-page="browser" class="section">
+                <div class="section-content">
+                    <h2>BROWSER LANGUAGES</h2>
+                    <div class="row">
+                        <div class="col">
+                            <h3>HTML5</h3>
+                            <div class="section-details">
+                                <p>HTML is a <strong>markup language</strong> used <strong>for structuring and presenting content</strong> on the World Wide Web</p>
+                                <p>Many new features has been included in the fifth versión, like <strong>&lt;video&gt;, &lt;audio&gt; or &lt;canvas&gt; for graphical content</strong>. Or <strong>&lt;main&gt;, &lt;section&gt;, &lt;article&gt;, &lt;header&gt;, &lt;footer&gt;, &lt;aside&gt; and &lt;figure&gt; to enrich the semantic</strong> of the content.</p>
+                            </div>
+                            <a class="section-media" href="https://www.w3.org/TR/html5/" target="_blank" title="W3.org HTML5 Specification">
+                                <img src="./media/images/html5.png" alt="HTML5" />
+                            </a>
+                        </div>
+                        <div class="col">
+                            <h3>CSS3</h3>
+                            <div class="section-details">
+                                <p>CSS is a style sheet language <strong>used for describing the presentation of a document</strong> written in a markup language. It can be applied not just in HTML and XHTML, but in XML, SVG and XUL and is applicable to rendering in speech or media.</p>
+                                <p>It was <strong>designed</strong> primarily <strong>to enable the separation of document content from document presentation</strong>, including aspects such as the layout, colors and fonts.</p>
+                            </div>
+                            <a class="section-media" href="https://www.w3.org/Style/CSS/" target="_blank" title="W3.org CSS3 Specification">
+                                <img src="./media/images/css3.png" alt="CSS3" />
+                            </a>
+                        </div>
+                        <div class="col">
+                            <h3>JavaScript</h3>
+                            <div class="section-details">
+                                <p>JavaScript <strong>is an interpreted programming language</strong> standardized in the ECMAScript language specification.</p>
+                                <p>It is a prototype-based with first-class functions supporting object-oriented, imperative and functional programming styles.</p>
+                                <ul>
+                                    <li>
+                                        <strong>Client-side JavaScript</strong> is used as an interpreted language which supply objects to control the browser and its DOM API
+                                    </li>
+                                    <li>
+                                        <strong>Server-side JavaScript</strong> supply objects to running it on the server in run-time environments such as Node.js
+                                    </li>
+                                </ul>
+                            </div>
+                            <a class="section-media" href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank" title="MDN JavaScript">
+                                <img src="./media/images/javascript.png" alt="JavaScript" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section data-page="responsive" class="section">
+                <section class="section-content">
+                    <h2>RESPONSIVE VS ADAPTIVE DESIGN</h2>
+                    <div class="row">
+                        <div class="col">
+                            <h3>RESPONSIVE DESIGN</h3>
+                            <div class="section-details">
+                                <p>Responsive design respond to the size of the browser at any given point with <strong>fluid layouts</strong>. It <strong>doesn't matter what size is the browser</strong>, the layout will adapt their content.</p>
+                                <p><strong>In reponsive design we focus on our layout design and when it needs to be readapted.</strong></p>
+                                <ul>
+                                    <li>
+                                        <span>Media queries</span>
+                                    </li>
+                                    <li>
+                                        <span>Relative layout size units: %, vh, vw, em, rem</span>
+                                    </li>
+                                    <li>
+                                        <span>Relative font size units: em, rem</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <h3>ADAPTIVE DESIGN</h3>
+                            <div class="section-details">
+                                <p>Adaptive design uses <strong>static layouts</strong> based on breakpoints which don't respond once they are initially loaded.</p>
+                                <p>The adaptive design <strong>detect the browser size and load the appropiate layout</strong> for it. In this case, <strong>we have to take into consideration the different resolutions of the target devices</strong>. The most common widths are 320, 480, 768, 960, 1024, 1200 and 1600.</p>
+                                <ul>
+                                    <li>
+                                        <span>Media queries</span>
+                                    </li>
+                                    <li>
+                                        <span>Absolute layout size units: px</span>
+                                    </li>
+                                    <li>
+                                        <span>Relative or asbolute font size units: px, em, rem</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://alistapart.com/article/responsive-web-design" target="_blank" title="Responsive Web Design: A List Apart">
+                        <img src="./media/images/responsive.png" alt="Responsive design" />
+                    </a>
+                </section>
+            </section>
+            <section data-page="mobile" class="section">
+                <section class="section-content">
+                    <h2>MOBILE FIRST VS DESKTOP FIRST</h2>
+                    <div class="row">
+                        <div class="col">
+                            <h3>MOBILE FIRST</h3>
+                            <div class="section-details">
+                                <p>Mobile first is a <strong>progressive enhancement</strong> strategy which takes a bottom-up approach where you <strong>first design for the mobile device</strong> and then embellish for the bigger devices.</p>
+                                <pre>
+                                    <code>
+/* MOBILE STYLES */
+
+@media screen and (min-width: 768px) { /* TABLET STYLES */ }
+
+@media screen and (min-width: 1200px) { /* DESKTOP STYLES */ }
+                                    </code>
+                                </pre>
+                            </div>
+                            <div class="section-media">
+                                <img src="./media/images/mobile-first.png" alt="Mobile First" title="Mobile First" />
+                            </div>
+                        </div>
+                        <div class="col">
+                            <h3>DESKTOP FIRST</h3>
+                            <div class="section-details">
+                                <p>Desktop first is a <strong>graceful degradation</strong> strategy opposite to mobile first where you <strong>first design for the greatest device</strong> in mind and then taking a top-down approach where you design for the </p>
+                                <pre>
+                                    <code>
+/* DESKTOP STYLES */
+
+@media screen and (max-width: 768px) { /* TABLET STYLES */ }
+
+@media screen and (max-width: 320px) { /* MOBILE STYLES */ }
+                                    </code>
+                                </pre>
+                            </div>
+                            <div class="section-media">
+                                <img src="./media/images/desktop-first.png" alt="Desktop First" title="Desktop First" />
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <section data-page="frameworks" class="section">
+                <section class="section-content">
+                    <h2>FRAMEWORKS</h2>
+                    <div class="section-details">
+                        <p>Since the last years Front-End frameworks has become very popular. Those <strong>frameworks are a ser of JavaScript files</strong>, sometimes HTML and CSS too, that allow you to create a website consistently and with lower effort.</p>
+                        <strong>Ventages:</strong>
+                        <ul>
+                            <li>
+                                <p><strong>Speed of development:</strong> All the frameworks helps you to create quickly a website</p>
+                            </li>
+                            <li>
+                                <p><strong>Tested:</strong> Due to their popularity there are so many people in charge of make grow the frameworks and correct any possible bug that can appear</p>
+                            </li>
+                            <li>
+                                <p><strong>Popularity:</strong> There are so many popular frameworks so this way all people of a team are working in the same line </p>
+                            </li>
+                        </ul>
+                        <strong>Disadvanteges:</strong>
+                        <ul>
+                            <li>
+                                <p><strong>Learning curve:</strong> New frameworks are appearing constantly every month so as developers we have to keep in knowledge with all of them to be </p>
+                            </li>
+                            <li>
+                                <p><strong>Restricts to technically advance</strong> your own web development knowdlege and skill because you have to focus to learn the new framework every time
+                                </p>
+                            </li>
+                            <li>
+                                <p>Even for a experiment front-end developer, <strong>start using a new frameworks is slower than starting from the scratch</strong></p>
+                            </li>
+                            <li>
+                                <p>
+                                    The frameworks are evolving so fast so maybe the framework that you are using today <strong>could be</strong> the next month <strong>an obsolet framework.</strong>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="inline-logos">
+                        <li>
+                            <a href="https://angularjs.org/" target="_blank">
+                                <img src="./media/images/angularjs.png" alt="Angular" title="Angular" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://facebook.github.io/react/" target="_blank">
+                                <img src="./media/images/react.png" alt="React" title="React" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://vuejs.org/" target="_blank">
+                                <img src="./media/images/vue.png" alt="Vue" title="Vue" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://redux.js.org/" target="_blank">
+                                <img src="./media/images/redux.png" alt="Redux" title="Redux" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://backbonejs.org/" target="_blank">
+                                <img src="./media/images/backbone.png" alt="Backbone" title="Backbone" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.meteor.com/" target="_blank">
+                                <img src="./media/images/meteor.png" alt="Meteor" title="Meteor" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://knockoutjs.com/" target="_blank">
+                                <img src="./media/images/knockout.png" alt="Knockout" title="Knockout" />
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+            <section data-page="preprocessors" class="section">
+                <section class="section-content">
+                    <h2>PREPROCESSORS</h2>
+                    <div class="section-details">
+                        <p>A preprocessor is a program that <strong>takes an input data to produce output that is used as input to another program</strong>. We mainly use preprocessor in the case of HTML and CSS to <strong>facilitate the daily work</strong>. Thanks to preprocessor we gave some benefits to languages that originally they don't have, <strong>in the case of CSS, we can work with inheritance, variables or conditional flows for example.</strong></p>
+                        <p>The benefits of using a preprocessor are:</p>
+                        <ul>
+                            <li>
+                                <p>
+                                    We are not adding more lines of code to our website, we are just using an improve language to generate the final css that we are going to use in our website.
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Easy to maintain
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    DRY (Don't repeat yourself)
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    CSS more organized
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="inline-logos">
+                        <li>
+                            <a href="http://sass-lang.com/" target="_blank">
+                                <img src="./media/images/sass.png" alt="Sass" title="Sass" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://lesscss.org/" target="_blank">
+                                <img src="./media/images/less.png" alt="Less" title="Less" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://postcss.org/" target="_blank">
+                                <img src="./media/images/postcss.png" alt="PostCSS" title="PostCSS" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://stylus-lang.com/" target="_blank">
+                                <img src="./media/images/stylus.png" alt="Stylus" title="Stylus" />
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+            <section data-page="libraries" class="section">
+                <section class="section-content">
+                    <h2>LIBRARIES</h2>
+                    <div class="section-details">
+                        <p><strong>There are hundred of JavaScript libraries</strong> that help us thanks to grow up the language with new functionality that the language doesn't offer initially helping us to avoid to do some task just by our shelves.</p>
+                        <p><strong>Each library offers an specific functionality</strong> that we could need in some moment, like working with dates, data visualization, 3D animation or working with arrays.</p>
+                    </div>
+                    <ul class="inline-logos">
+                        <li>
+                            <a href="https://jquery.com/" target="_blank">
+                                <img src="./media/images/jquery.png" alt="jQuery" title="jQuery" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://d3js.org/" target="_blank">
+                                <img src="./media/images/d3.png" alt="D3" title="D3" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://momentjs.com/" target="_blank">
+                                <img src="./media/images/moment.png" alt="MomentJs" title="MomentJs" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://modernizr.com/" target="_blank">
+                                <img src="./media/images/modernizr.png" alt="Modernizr" title="Modernizr" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://threejs.org/" target="_blank">
+                                <img src="./media/images/threejs.png" alt="ThreeJs" title="ThreeJs" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://underscorejs.org/" target="_blank">
+                                <img src="./media/images/underscore.png" alt="Underscore" title="Underscore" />
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+            <section data-page="tools" class="section">
+                <section class="section-content">
+                    <h2>TOOLS</h2>
+                    <div class="section-details">
+                        <p>There are many <strong>tools</strong> that <strong>help us in our development day</strong>. Some of them offer us a environment IDE to coding, others helps to automatize repetitive task and some other help us to publish our products.</p>
+                    </div>
+                    <ul class="inline-logos">
+                        <li>
+                            <a href="https://atom.io/" target="_blank">
+                                <img src="./media/images/atom.png" alt="Atom" title="Atom" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.visualstudio.com/es/" target="_blank">
+                                <img src="./media/images/visualstudio.png" alt="Visual Studio" title="Visual Studio" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://developer.chrome.com/devtools" target="_blank">
+                                <img src="./media/images/chromedev.png" alt="Chrome Developer Tools" title="Chrome Developer Tools" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://jshint.com/" target="_blank">
+                                <img src="./media/images/jshint.png" alt="JsHint" title="JsHint" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.sublimetext.com" target="_blank">
+                                <img src="./media/images/sublime.png" alt="Sublime text" title="Sublime text" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://gulpjs.com/" target="_blank">
+                                <img src="./media/images/gulp.png" alt="Gulp" title="Gulp" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://codepen.io/" target="_blank">
+                                <img src="./media/images/codepen.png" alt="Codepen" title="Codepen" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://c9.io/" target="_blank">
+                                <img src="./media/images/cloud9.png" alt="Cloud9" title="Cloud9" />
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+            <section data-page="whatsnext" class="section">
+                <section class="section-content">
+                    <h2>THE FUTURE OF THE FRONT-END</h2>
+                    <div class="section-details">
+                        <p><strong>WebVR</strong> is an experimental JavaScript API that provides support for virtual reality devices, such as the HTC Vive, Oculus Rift or Google Cardboard, in a web browser.</p>
+                        <p><strong>Firebase</strong> is a mobile and web application platform with tools and infrastructure designed to help developers build high-quality apps. Firebase is made up of complementary features that developers can mix-and-match to fit their needs. </p>
+                    </div>
+                    <ul class="inline-logos">
+                        <li>
+                            <a href="https://webvr.info/" target="_blank">
+                                <img src="./media/images/webvr.png" alt="WebVR" title="WebVR" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://firebase.google.com/?hl=es-419" target="_blank">
+                                <img src="./media/images/firebase.png" alt="Firebase" title="Firebase" />
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+        </article>
+        <!-- BACK-END -->
+        <article id="l-back" data-page="back" class="slide">
+            <div id="navigator-back" class="navigator">
+                <button class="btn-prev-slide is-up">
+                    <span class="fa fa-chevron-left"></span>
+                </button>
+                <ul>
+                    <li class="is-active" data-ref="net">
+                        <span>Microsoft .Net</span>
+                    </li>
+                    <li data-ref="node">
+                        <span>Node JS</span>
+                    </li>
+                    <li data-ref="mvc">
+                        <span>ASP.NET MVC</span>
+                    </li>
+                    <li data-ref="api">
+                        <span>REST AND SOAP</span>
+                    </li>
+                    <li data-ref="desktop">
+                        <span>Desktop Applications</span>
+                    </li>
+                    <li data-ref="apps">
+                        <span>App Native vs App Hibrid</span>
+                    </li>
+                    <li data-ref="databases">
+                        <span>Databases</span>
+                    </li>
+                    <li data-ref="version">
+                        <span>Version Control</span>
+                    </li>
+                </ul>
+                <button class="btn-next-slide">
+                    <span class="fa fa-chevron-right"></span>
+                </button>
+            </div>
+            <section data-page="net" class="section">
+                <section class="section-content">
+                    <h2>MICROSOFT .NET</h2>
+                    <div class="section-details">
+                        <p>Microsoft <strong>.NET is a programming framework</strong> created by Microsoft to create applications more easily. Microsoft offers a fast, economy, robust and secure way of develop software/solutions allowing a fast and agile integration between companies.</p>
+                        <p><strong>Languages:</strong> C#, Visual Basic, XAML, C++ or J# among others.</p>
+                        <p><strong>Class Libraries:</strong> ASP.NET (Web components), ADO.Net (for data), Windows Forms (Desktop applications), WCF (service-oriented applications), WPF (Modern desktop applications), etc.</p>
+                    </div>
+                    <ul class="inline-logos">
+                        <li>
+                            <img src="./media/images/wcf.png" alt="WCF" title="WCF" />
+                        </li>
+                        <li>
+                            <img src="./media/images/wpf.png" alt="WPF" title="WPF" />
+                        </li>
+                        <li>
+                            <img src="./media/images/adonet.png" alt="ADO" title="ADO" />
+                        </li>
+                        <li>
+                            <img src="./media/images/aspnet.png" alt="ASP" title="ASP" />
+                        </li>
+                    </ul>
+                </section>
+            </section>
+            <section data-page="node" class="section">
+                <section class="section-content">
+                    <h2>NODE JS</h2>
+                    <div class="section-details">
+                        <p><strong>Node.js is an open-source, cross-platform JavaScript runtime environment for developing a diverse variety of server tools and applications.</strong> Although Node.js is not a JavaScript framework, many of its basic modules are written in JavaScript, and developers can write new modules in JavaScript. The runtime environment interprets JavaScript using Google's V8 JavaScript engine.</p>
+                        <p>Node.js <strong>has an event-driven architecture</strong> capable of asynchronous I/O. These design choices aim to optimize throughput and scalability in Web applications with many input/output operations, as well as for real-time Web applications (e.g., real-time communication programs and browser games)</p>
+                    </div>
+                    <a class="section-media" href="https://nodejs.org/es/" target="_blank">
+                        <img src="./media/images/node.png" alt="NodeJS" title="NodeJs" />
+                    </a>
+                </section>
+            </section>
+            <section data-page="mvc" class="section">
+                <section class="section-content">
+                    <h2>ASP.NET MVC</h2>
+                    <div class="section-details">
+                        <p><strong>ASP.NET MVC is a web application framework developed by Microsoft</strong> which implements the model-view-controller pattern.</p>
+                        <p>It allows software developers to build as a composition of three roles: Model, View and Controller.</p>
+                        <p>The view engines used in the ASP.NET MVC 3 and MVC 4 frameworks are Razor and the Web Forms. Both view engines are part of the MVC 3 framework. By default, the view engine in the MVC framework uses Razor .cshtml and .vbhtml, or Web Forms .aspx pages to design the layout of the user interface pages onto which the data is composed</p>
+                        <ul>
+                            <li>
+                                <p><strong>Model:</strong> Represents the state of a particular aspect of the application. and then passes information to the view.</p>
+                            </li>
+                            <li>
+                                <p><strong>View:</strong> Accepts necessary information from the controller and renders a user interface to display that information</p>
+                            </li>
+                            <li>
+                                <p><strong>Controller:</strong> Handles interactions from the view and updates the model to reflect a change in state of the application.</p>
+                            </li>
+                        </ul>
+                    </div>                    
+                    <div class="section-media">
+                        <img src="./media/images/mvc.png" alt="ASPMVC" title="ASPMVC" />
+                    </div>
+                </section>
+            </section>
+            <section data-page="api" class="section">
+                <section class="section-content">
+                    <h2>REST AND SOAP</h2>
+                    <div class="row">
+                        <div class="col">
+                            <h3>REST API</h3>
+                            <div class="section-details">
+                                <p><strong>REST web services are a architectural style</strong> provide interoperability between computer systems on the internet. Allows requesting systems to access and manipulate textual representations of Web resources using a uniform and predefined set of stateless operations.</p>
+                                <ul>
+                                    <li>
+                                        <p><strong>Client-Server Communication:</strong> Client-server architectures have a very distinct separation of concerns.</p>
+                                    </li>
+                                    <li>
+                                        <p><strong>Stateless:</strong> The server must be able to completely understand the client request without using any server context or server session state.</p>
+                                    </li>
+                                    <li>
+                                        <p><strong>Cacheable:</strong> Cache constraints may be used, thus enabling response data to be marked as cacheable or not-cacheable. Any data marked as cacheable may be reused as the response to the same subsequent request.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <h3>SOAP</h3>
+                            <div class="section-details">
+                                <p><strong>SOAP is a protocol specification</strong> for exchanging structured information in the implementation of web services in computer networks. It uses XML Information Set for its message format, and relies on application layer protocols, most often Hypertext Transfer Protocol (HTTP) or Simple Mail Transfer Protocol (SMTP), for message negotiation and transmission.</p>
+                                <p>SOAP provides the Messaging Protocol layer of a web services protocol stack for web services. It is an XML-based protocol consisting of three parts:</p>
+                                <ul>
+                                    <li>
+                                        <p>an <strong>envelope</strong>, which defines the message structure and how to process it</p>
+                                    </li>
+                                    <li>
+                                        <p>a set of <strong>encoding rules</strong> for expressing instances of application-defined datatypes</p>
+                                    </li>
+                                    <li>
+                                        <p>a <strong>convention</strong> for representing procedure calls and responses</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <section data-page="desktop" class="section">
+                <section class="section-content">
+                    <h2>DESKTOP APPLICATIONS</h2>
+                    <div class="row">
+                        <div class="col">
+                            <h3>WINDOWS PRESENTATION FOUNDATION</h3>
+                            <div class="section-details">
+                                <p>Windows Presentation Foundation (or WPF) <strong>is a graphical subsystem by Microsoft for rendering user interfaces in Windows-based applications.</strong> Rather than relying on the older GDI subsystem, WPF uses DirectX.</p>
+                                <p> WPF attempts to provide a consistent programming model for building applications and separates the user interface from business logic. It resembles similar XML-oriented object models, such as those implemented in XUL and SVG.</p>
+                                <div class="section-media">
+                                    <img src="./media/images/wpf.png" alt="WPF" title="WPF" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <h3>ELECTRON</h3>
+                            <div class="section-details">
+                                <p>Electron is an open-source framework developed by GitHub. It <strong>allows for the development of desktop GUI applications using the Node.js runtime</strong> and the Chromium web browser, originally used for the development of backend web applications.</p>
+                                <p>A basic Electron app consists of three files: package.json (metadata), main.js (code) and index.html (graphical user interface). The framework is provided by the Electron executable file (electron.exe in Windows, electron.app on macOS and electron on Linux).</p>
+                                <a class="section-media" href="https://electron.atom.io/" target="_blank">
+                                    <img src="./media/images/electron.png" alt="Electron" title="Electron" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <section data-page="apps" class="section">
+                <div class="section-content">
+                    <h2>APP NATIVE VS APP HIBRID</h2>
+                    <div class="row">
+                        <div class="col">
+                            <h3>APP NATIVE</h3>
+                            <div class="section-details">
+                                <p>Native apps are designed and coded for a specific kind of device. <strong>iPhone apps are written in Swift or Objective-C and Android apps in Java.</strong></p>
+                                <p>Ventages of writing native apps:</p>
+                                <ul>
+                                    <li>
+                                        <p><strong>Great performance</strong></p>
+                                    </li>
+                                    <li>
+                                        <p><strong>Better UX:</strong> both Android and iOS apps have some individual characteristics, which feel natural for their users.</p>
+                                    </li>
+                                    <li>      
+                                        <p><strong>Easier access to built-in capabilities:</strong> native apps have no problem tapping into all the device’s functionalities, such as: camera, microphone, calendar, GPS etc. while hybrid apps grant only a limited access to them.</p>
+                                    </li>
+                                    <li>
+                                        <p><strong>Internet connection is not always a must</strong></p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <ul class="inline-logos">
+                                <li>
+                                    <img src="./media/images/android.png" alt="Android" title="Android" />
+                                </li>
+                                <li>
+                                    <img src="./media/images/apple.png" alt="Apple" title="Apple" />
+                                </li>
+                                <li>
+                                    <img src="./media/images/xamarin.png" alt="Xamarin" title="Xamarin" />
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <h3>APP HIBRID</h3>
+                            <div class="section-details">
+                                <p>Hybrid apps are basically web apps hidden behind a native app shell. They are cross-platform and can be immediately distributed between app stores without the need to develop two different versions for  Android and iOS. </p>
+                                <p><strong>Most of hybrid apps are built using cross-compatible web technologies (HTML5, CSS, Javascript etc.)</strong> and then they are wrapped in a native app using platforms such as Cordova.</p>
+                                <p>Ventages of writing hibrid apps:</p>
+                                <ul>
+                                    <li>
+                                        <p><strong>Cost:</strong> the lowered cost of developing a hybrid app instead of a native application is one of the biggest pros of this solution.</p>
+                                    </li>
+                                    <li>
+                                        <p><strong>Lower requirements:</strong> one language can be used on all available platforms (assuming you are using Cordova or PhoneGap wrapper)</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <ul class="inline-logos">
+                                <li>
+                                    <a href="https://cordova.apache.org/" target="_blank">
+                                        <img src="./media/images/cordova.png" alt="Cordova" title="Cordova" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://ionicframework.com/" target="_blank">
+                                        <img src="./media/images/ionic.png" alt="Ionic" title="Ionic" />
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section data-page="databases" class="section">
+                <section class="section-content">
+                    <h2>DATABASES</h2>
+                    <div class="row">
+                        <div class="col">
+                            <h3>SQL</h3>
+                            <div class="section-details">
+                                <p>SQL is a domain-specific language used in programming and designed for managing data held in a relational database management system (RDBMS), or for stream processing in a <strong>relational data</strong> stream management system (RDSMS).</p>
+                            </div>
+                            <a class="section-media" href="https://www.microsoft.com/sql-server/sql-server-2016" target="_blank">
+                                <img src="./media/images/sqlserver.png" alt="SQL Server" title="SQL Server" />
+                            </a>
+                        </div>
+                        <div class="col">
+                            <h3>NOSQL</h3>
+                            <div class="section-details">
+                                <p>NOSQL provides a mechanism for storage and retrieval of data which is modeled in means other than the tabular relations used in relational databases. </p>
+                                <p>The data structures used by NoSQL databases (e.g. key-value, wide column, graph, or document) are different from those used by default in relational databases, making <strong>some operations faster in NoSQL.</strong></p>
+                            </div>
+                            <a class="section-media" href="https://www.mongodb.com/" target="_blank">
+                                <img src="./media/images/mongodb.png" alt="MongoDB" title="MongoDB" />
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <section data-page="version" class="section">
+                <section class="section-content">
+                    <h2>VERSION CONTROL</h2>
+                    <div class="section-details">
+                        <p>A component of software configuration management, version control, also known as revision control or source control, <strong>is the management of changes to documents, computer programs, large web sites, and other collections of information.</strong> </p>
+                        <p>Changes are usually identified by a number or letter code, termed the "revision number", "revision level", or simply "revision". For example, an initial set of files is "revision 1". When the first change is made, the resulting set is "revision 2", and so on. Each revision is associated with a timestamp and the person making the change. Revisions can be compared, restored, and with some types of files, merged.</p>
+                    </div>
+                    <ul class="inline-logos">
+                        <li>
+                            <a href="https://www.visualstudio.com/tfs/" target="blank">
+                                <img src="./media/images/tfs.png" alt="TFS" title="TFS" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/" target="blank">
+                                <img src="./media/images/github.png" alt="Git" title="Git" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://bitbucket.org/" target="blank">
+                                <img src="./media/images/bitbucket.png" alt="Bitbucket" title="Bitbucket" />
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+        </article>
+        <script src="scripts/navigator.js"></script>
+        <script src="scripts/main.js"></script>
+    </body>
+</html>

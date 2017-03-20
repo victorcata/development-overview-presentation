@@ -1,0 +1,6 @@
+# Node directory
+node_modules
+./app/media/*.mov
+./app/media/*.mp4
+*.publishproj
+*.pubxml

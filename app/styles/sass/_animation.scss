@@ -1,0 +1,134 @@
+//---------------------------- ANIMATION HOME ----------------------------
+@-webkit-keyframes bottomToTop {
+    0% {
+        top: 100%;
+        animation-timing: ease-in;
+    }
+
+    100% {
+        top: 0;
+        animation-timing: ease-out;
+    }
+}
+
+@keyframes bottomToTop {
+    0% {
+        top: 100%;
+        animation-timing: ease-in;
+    }
+
+    100% {
+        top: 0;
+        animation-timing: ease-out;
+    }
+}
+
+//---------------------------- ANIMATION BUTTON DOWN ----------------------------
+@-webkit-keyframes btnBottomToTop {
+    0% {
+        top: 100%;
+        animation-timing: ease-in;
+    }
+
+    100% {
+        top: 0;
+        animation-timing: ease-out;
+    }
+}
+
+@keyframes btnBottomToTop {
+    0% {
+        top: 100px;
+        animation-timing: ease-in;
+    }
+
+    100% {
+        top: 0;
+        animation-timing: ease-out;
+    }
+}
+
+
+//---------------------------- ANIMATION BUTTON ----------------------------
+@-webkit-keyframes actionBtn {
+    0% {
+        margin-bottom: 0;
+        font-size: 1em;
+    }
+
+    100% {
+        margin-bottom: 20px;
+        font-size: 1.5em;
+    }
+}
+
+@keyframes actionBtn {
+    0% {
+        margin-bottom: 0;
+        font-size: 1em;
+    }
+
+    100% {
+        margin-bottom: 20px;
+        font-size: 1.5em;
+    }
+}
+
+//---------------------------- FRONT END IMAGE ----------------------------
+@-webkit-keyframes toRight {
+    0% {
+        left: -100%;
+    }
+
+    75% {
+        left: -20%;
+    }
+
+    100% {
+        left: -30%;
+    }
+}
+
+@keyframes toRight {
+    0% {
+        left: -100%;
+    }
+
+    75% {
+        left: -20%;
+    }
+
+    100% {
+        left: -30%;
+    }
+}
+
+
+//---------------------------- FRONT END IMAGE ----------------------------
+@-webkit-keyframes toLeft {
+    0% {
+        right: -100%;
+    }
+
+    75% {
+        right: -25%;
+    }
+
+    100% {
+        right: -35%;
+    }
+}
+
+@keyframes toLeft {
+    0% {
+        right: -100%;
+    }
+
+    75% {
+        right: -25%;
+    }
+
+    100% {
+        right: -35%;
+    }
+}
